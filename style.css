@@ -1,0 +1,163 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="date"], textarea {
+    margin-top: 5px;
+    border: 1px solid #00008B; /* Темно-синий бордер */
+    border-radius: 4px;
+    padding: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.moods_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.mood {
+    background-color: #fff;
+    border: 0;
+    border-radius: 50%;
+    color: #000;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mood_1 {
+    color: var(--mood-color-1, #FFD700);
+}
+
+.mood_2 {
+    color: var(--mood-color-2, #ADFF2F);
+}
+
+.mood_3 {
+    color: var(--mood-color-3, #FFD700);
+}
+
+.mood_4 {
+    color: var(--mood-color-4, #FFA07A);
+}
+
+.mood_5 {
+    color: var(--mood-color-5, #DC143C);
+}
+
+.mood.selected {
+    background-color: currentColor;
+}
+
+.mood.selected i {
+    color: #fff;
+}
+
+.save-button {
+    background-color: #ADD8E6; /* Голубой цвет фона */
+    color: #00008B; /* Темно-синий цвет текста */
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#selected-entry {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #E0FFFF; /* Светло-голубой фон */
+    border-radius: 5px;
+}
+
+#history {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: transparent; /* Прозрачный фон */
+    border-radius: 5px;
+}
+
+.entry {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.entry.mood_1 {
+    color: #000;
+    background-color: #FFF8DC;
+}
+
+.entry.mood_2 {
+    color: #000;
+    background-color: #F0FFF0;
+}
+
+.entry.mood_3 {
+    color: #000;
+    background-color: #FFFACD;
+}
+
+.entry.mood_4 {
+    color: #000;
+    background-color: #FFDAB9;
+}
+
+.entry.mood_5 {
+    color: #000;
+    background-color: #FFE4E1;
+}
+
+.clear-button {
+    background-color: #FFB6C1;
+    color: #8B0000;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+}

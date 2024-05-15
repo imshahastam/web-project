@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный Дневник Настроения</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Личный Дневник Настроения</h1>
+        <form id="mood-form">
+            <label for="date">Дата:</label>
+            <input type="date" id="date" required>
+            <label>Ваше настроение:</label>
+            <div class="moods_container">
+                <button class="mood mood_1" id="mood_1">
+                    <i class="far fa-laugh"></i>
+                </button>
+                <button class="mood mood_2" id="mood_2">
+                    <i class="far fa-smile"></i>
+                </button>
+                <button class="mood mood_3" id="mood_3">
+                    <i class="far fa-meh"></i>
+                </button>
+                <button class="mood mood_4" id="mood_4">
+                    <i class="far fa-frown"></i>
+                </button>
+                <button class="mood mood_5" id="mood_5">
+                    <i class="far fa-sad-tear"></i>
+                </button>
+            </div>
+            <label for="note">Заметка:</label>
+            <textarea id="note" rows="4" required></textarea>
+            <button type="submit" class="save-button">Сохранить</button>
+        </form>
+        <h2>Запись за выбранную дату:</h2>
+        <div id="selected-entry"></div>
+        <h2>История настроений:</h2>
+        <div id="history"></div>
+        <button id="clear-history" class="clear-button">Очистить</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
